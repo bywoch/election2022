@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="robots" content="noindex,nofollow">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="title" content="선택 2022 - MBC NEWS">
+    <meta name="url" content="https://imnews.imbc.com/issue/vote2022/m/main_m.html">
+    <meta property="og:url" content="https://image.imnews.imbc.com/issue/2022vote/2022vote.png">
+    <meta property="og:title" content="선택 2022 제8회 전국동시지방선거 MBC NEWS">
+    <meta property="og:description" content="선택 2022 제8회 전국동시지방선거 기본과 원칙에 충실한 뉴스">
+    <meta property="og:site_name" content="선택 2022 MBC NEWS 제8회 전국동시지방선거">
+    <meta property="og:image" content="https://image.imnews.imbc.com/issue/2022vote/2022vote.png">
+    <meta property="og:locale" content="ko_KR">
+    <meta itemprop="name" content="MBC NEWS">
+    <meta itemprop="description" content="선택 2022 제8회 전국동시지방선거 기본과 원칙에 충실한 뉴스">
+    <meta itemprop="image" content="https://image.imnews.imbc.com/issue/2022vote/2022vote.png">
+    <link rel="shortcut icon" type="image/x-icon" href="https://image.imnews.imbc.com/issue/2022vote/favicon.ico">
+
+    <title>개표현황 | 선택 2022 - MBC NEWS</title>
+
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/vote.ani.css">
+    <link rel="stylesheet" href="../css/graph.css">
+    <link rel="stylesheet" href="../css/m_research.css">
+    <link rel="stylesheet" href="../css/hexagon_map.css">
+    <script src="//imnews.imbc.com/issue/2022vote/js/devicecheck.js"></script>
+    <script src="https://imnews.imbc.com/page/include/js/lib/jquery-1.12.3.min.js"></script>
+    <script src="../js/vote.info.js"></script>
+    <script src="../js/common.js"></script>
+    <!-- 숫자 카운트 업 -->
+    <script src="../js/waypoints.min.js"></script>
+    <script src="../js/jquery.counterup.min.js"></script>
+    <script src="../js/sub.js"></script>
+    <script src="../js/open.js"></script>
+</head>
+
+<body>
+    <div id="wrap" class="sub tugaepyo open">
+        <!-- u_skip -->
+        <div id="u_skip">
+            <a href="#content">본문 바로가기</a>
+            <a href="#navi">메뉴 바로가기</a>
+        </div>
+        <!-- //u_skip -->
+        <!-- header -->
+        <header id="header" class="header"></header>
+        <!-- //header -->
+        <!-- navigation -->
+        <nav id="navi" class="navi fliking">
+            <span class="nav_blur"></span>
+        </nav>
+        <!-- //navigation -->
+        <!-- container -->
+        <div id="container" class="container">
+            <!-- content -->
+            <div id="content">
+                <!-- 전국 개표율 Area Start -->
+                <section class="section rate_section">
+                    <div class="rate_onair"></div>
+                    <!--투표율 타이머-->
+                    <p class="rate_count" id="rate_count" style="display:none;"></p>
+                </section>
+                <!-- // 전국 개표율 Area End -->
+
+                <!-- 전국 개표현황 Area Start -->
+                <section class="section research_section">
+                    <div class="section_top">
+                        <h2 class="sectiontop_txt"><span class="sctTop_ico rsc_ico_04"></span>전국 개표현황</h2>
+                    </div>
+
+                    <div class="mayor_lst lst_trio">
+                        <ul>
+                            <li class="on" title="선택됨" onclick="OpenVote2022.typeHandler(3)"><button
+                                    type="button">광역단체장</button></li>
+                            <li onclick="OpenVote2022.typeHandler(4)"><button type="button">기초단체장</button></li>
+                            <li onclick="OpenVote2022.typeHandler(11)"><button type="button">교육감</button></li>
+                        </ul>
+                    </div>
+
+                    <div class="allvote_select_bx" id="open_select">
+                        <select id="metropolitanSelect_3" class="mp_select" name="metropolitanSelect" title="전국 개표현황"
+                            onchange="OpenVote2022.ggpyoDataHandler(1)">
+                            <option value="1">서울특별시</option>
+                            <option value="9">경기도</option>
+                            <option value="4">인천광역시</option>
+                            <option value="2">부산광역시</option>
+                            <option value="7">울산광역시</option>
+                            <option value="16">경상남도</option>
+                            <option value="6">대전광역시</option>
+                            <option value="8">세종특별자치시</option>
+                            <option value="12">충청남도</option>
+                            <option value="11">충청북도</option>
+                            <option value="3">대구광역시</option>
+                            <option value="15">경상북도</option>
+                            <option value="5">광주광역시</option>
+                            <option value="14">전라남도</option>
+                            <option value="13">전라북도</option>
+                            <option value="10">강원도</option>
+                            <option value="17">제주특별자치도</option>
+                        </select>
+                    </div>
+                    <div class="mayor_wrap">
+                        <div class="mayor_info">
+                            <p class="mayor_zone mayor_allvote" id="open_1_top_title">
+                                <!--
+                                <span class="mayor_sido">광역단체장 (경기도지사)</span>
+                                <span class="mayor_do"><span class="myd_area">경기도</span> (후보 <span
+                                        class="myd_num">5</span> 명) ·  개표율 <span class="myd_percnet">45.5</span>%</span>
+                                <button class="mayor_pop" type="button">특례시란?</button>
+                                -->
+                            </p>
+                        </div>
+
+                        <div class="mayor_popup">
+                            <div class="mypop_bx">
+                                <p><strong>! 특례시란?</strong>
+                                    <br>
+                                    <br>
+                                    광역지방자치단체와 기초지방자치단체 중간 형태의 새로운 지방자치단체 유형으로 인구 100만명 이상 대도시에 부여.<br>
+                                    다만, 특례시는 단순 행정 명칭으로 <span class="c_9a4c1c">용인시, 고양시, 수원시, 창원시 등</span>은 기초지방자체단체에
+                                    속하며 주소상 이름도
+                                    기존과 동일하게 유지.
+                                </p>
+                                <div class="my_popclose_bx">
+                                    <button class="my_popclose" type="button">닫기</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mayor_lst_bx">
+                            <ul id="open_1_gaepyo_data">
+                                <!--
+                                <li>
+                                    <span class="mylst_ctt mylst_definite">
+                                        <span class="mylst_rank"><span class="mylst_rn">1</span>위</span>
+                                        <span class="mylst_img">
+                                            <span class="wnimg_bx">
+                                                <img src="https://image.imnews.imbc.com/issue/2022vote/m/images/win_candi_img_1.jpg"
+                                                    alt="이정재">
+                                            </span>
+                                        </span>
+                                        <span class="mylst_txt">
+                                            <ul>
+                                                <li>기호<span class="mylst_num">1번</span></li>
+                                                <li class="mylst_name"><strong>홍길동</strong></li>
+                                                <li><strong class="mylst_count"><span
+                                                            class="mylst_percent">22.2</span>%</strong></li>
+                                                <li class="mylst_party">갑을병정무당</li>
+                                                <li><span class="mylst_vote">461,000</span> 표</li>
+                                                <li class="mep_percent">출구조사 1위 <span class="mep_percent">33.5</span>%
+                                                </li>
+                                            </ul>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="mylst_ctt">
+                                        <span class="mylst_rank"><span class="mylst_rn">2</span>위</span>
+                                        <span class="mylst_img">
+                                            <span class="wnimg_bx">
+                                                <img src="https://image.imnews.imbc.com/issue/2022vote/m/images/win_candi_img_2.jpg"
+                                                    alt="조인성">
+                                            </span>
+                                        </span>
+                                        <span class="mylst_txt">
+                                            <ul>
+                                                <li>기호<span class="mylst_num">2번</span></li>
+                                                <li class="mylst_name"><strong>홍길동</strong></li>
+                                                <li><strong class="mylst_count"><span
+                                                            class="mylst_percent">22.2</span>%</strong></li>
+                                                <li class="mylst_party">갑을병정무당</li>
+                                                <li><span class="mylst_vote">461,000</span> 표</li>
+                                                <li class="mep_percent">출구조사 2위 <span class="mep_percent">33.5</span>%
+                                                </li>
+                                            </ul>
+                                        </span>
+                                    </span>
+                                </li>
+                            -->
+                            </ul>
+                            <div class="mylst_dffrvt" id="open_1_footer" style="display:none;">
+                                <!--
+                                <p><strong>득표차</strong> <span class="dffrvt_percent">0.8</span>% <span
+                                        class="dffrvt_vote">222,222</span> 표</p>
+                                -->
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+                <!-- 전국 개표현황 Area End -->
+
+                <!-- 재보궐선거(국회의원) 개표현황 Area Start -->
+                <section class="section research_section">
+                    <div class="section_top">
+                        <h2 class="sectiontop_txt"><span class="sctTop_ico rsc_ico_04"></span>보궐선거</h2>
+                    </div>
+
+                    <div class="allvote_select_bx">
+                        <select id="metropolitanSelect_2" class="mp_select" name="revoteAreaSelect"
+                            title="재보궐선거(국회의원) 개표현황" onchange="OpenVote2022.ggpyoDataHandler(2)">
+                            <option value="9">경기 성남 분당 갑</option>
+                            <option value="4">인천 계양 을</option>
+                            <option value="16">경남 창원 의창</option>
+                            <option value="12">충남 보령·서천</option>
+                            <option value="3">대구 수성 을</option>
+                            <option value="10">강원 원주 갑</option>
+                            <option value="17">제주 제주 을</option>
+                        </select>
+                    </div>
+
+                    <div class="mayor_wrap">
+                        <div class="mayor_info">
+                            <p class="mayor_zone mayor_allvote" id="open_2_top_title">
+                                <!--
+                                <span class="mayor_sido">인천계양을</span>
+                                <span class="mayor_do"><span class="myd_area">인천계양을</span> (후보 <span
+                                        class="myd_num">5</span> 명) ·  개표율 <span class="myd_percnet">45.5</span>%</span>
+                                -->
+                            </p>
+                        </div>
+
+                        <div class="mayor_lst_bx bgmayor_lst_bx">
+                            <ul id="open_2_gaepyo_data">
+                                <!--
+                                <li>
+                                    <span class="mylst_ctt mylst_definite">
+                                        <span class="mylst_rank"><span class="mylst_rn">1</span>위</span>
+                                        <span class="mylst_img">
+                                            <span class="wnimg_bx">
+                                                <img src="https://image.imnews.imbc.com/issue/2022vote/m/images/win_candi_img_1.jpg"
+                                                    alt="이정재">
+                                            </span>
+                                        </span>
+                                        <span class="mylst_txt">
+                                            <ul>
+                                                <li>기호<span class="mylst_num">1번</span></li>
+                                                <li class="mylst_name"><strong>홍길동</strong></li>
+                                                <li><strong class="mylst_count"><span
+                                                            class="mylst_percent">22.2</span>%</strong></li>
+                                                <li class="mylst_party">갑을병정무당</li>
+                                                <li><span class="mylst_vote">461,000</span> 표</li>
+                                                <li class="mep_percent">출구조사 1위 <span class="mep_percent">33.5</span>%
+                                                </li>
+                                            </ul>
+                                        </span>
+                                    </span>
+                                </li>
+                                -->
+                            </ul>
+                            <div class="mylst_dffrvt" id="open_2_footer">
+                                <!--
+                                <p><strong>득표차</strong> <span class="dffrvt_percent">0.8</span>% <span
+                                        class="dffrvt_vote">222,222</span> 표</p>
+                                -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- 재보궐선거(국회의원) 개표현황 Area End -->
+
+
+                <!-- 화제지역 Area Start -->
+                <section class="section hotArea_section">
+                    <div class="section_top">
+                        <h2 class="sectiontop_txt"><span class="sctTop_ico rsc_ico_06"></span>화제지역-광역단체장</h2>
+                    </div>
+                    <p class="htar_info_txt" id="district_3_title">
+                        <!--
+                        박근혜 품은 대구, 지방선거 표심은?<br>
+                        <span class="c_8c6146">대구광역시장 선거 개표현황</span>
+                        -->
+                    </p>
+                    <div class="mayor_wrap">
+                        <div class="hotArea_info">
+                            <p class="hotArea_zone">
+                                <span class="hotArea_sido" id="district_3_position"></span>
+                            </p>
+                        </div>
+                        <button class="hotArea_arrow htara_prv"
+                            onclick="OpenVote2022.getDistrictClickHandler(3,-1)"></button>
+                        <button class="hotArea_arrow htara_nxt"
+                            onclick="OpenVote2022.getDistrictClickHandler(3,1)"></button>
+                        <div class="mayor_bx" id="district_3_data"></div>
+                    </div>
+                </section>
+                <!-- 화제지역 Area End -->
+                <!-- 화제지역 Area Start -->
+                <section class="section hotArea_section">
+                    <div class="section_top">
+                        <h2 class="sectiontop_txt"><span class="sctTop_ico rsc_ico_06"></span>화제지역-보궐선거</h2>
+                    </div>
+                    <p class="htar_info_txt" id="district_2_title"></p>
+                    <div class="mayor_wrap">
+                        <div class="hotArea_info">
+                            <p class="hotArea_zone">
+                                <span class="hotArea_sido" id="district_2_position"></span>
+                            </p>
+                        </div>
+                        <button class="hotArea_arrow htara_prv"
+                            onclick="OpenVote2022.getDistrictBGlickHandler(2,-1)"></button>
+                        <button class="hotArea_arrow htara_nxt"
+                            onclick="OpenVote2022.getDistrictBGlickHandler(2,1)"></button>
+                        <div class="mayor_bx" id="district_2_data"></div>
+                    </div>
+                </section>
+                <!-- 화제지역 Area End -->
+
+                <!-- 화제지역 – 족집게지역 Area Start -->
+                <section class="section hotArea_section">
+                    <div class="section_top">
+                        <h2 class="sectiontop_txt"><span class="sctTop_ico rsc_ico_06"></span>화제지역–족집게지역</h2>
+                    </div>
+                    <p class="htar_info_txt">
+                        7번 치러진 지난 전국동시지방선거에서<br>광역단체장을 모두 맞혔다!<br><span class="c_8c6146">과연 이번 선거에서는??</span>
+                    </p>
+                    <div class="mayor_wrap">
+                        <div class="hotArea_info">
+                            <div class="hotArea_zone">
+                                <select id="exitPollSelect_jok" class="hotArea_sido hot_select" name="exitPollSelect"
+                                    title="지역별 광역단체장 선호도" onchange="OpenVote2022.getJokjipGae()">
+                                    <option value="15" selected>서울 양천구</option>
+                                    <option value="19">서울 영등포</option>
+                                    <option value="2">서울 중구</option>
+                                    <option value="25">서울 강동구</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="hotArea_arrow htara_prv"
+                            onclick="OpenVote2022.getSelectBoxByJokjipGae(-1)"></button>
+                        <button class="hotArea_arrow htara_nxt"
+                            onclick="OpenVote2022.getSelectBoxByJokjipGae(1)"></button>
+                        <!--족집게지역 데이터-->
+                        <div class="mayor_bx" id="jokjipgae_data"></div>
+                    </div>
+                </section>
+                <!-- 화제지역 – 족집게지역 Area End -->
+
+                <!-- 이시각 1위  Area Start -->
+                <section class="section nowtop_section">
+                    <div class="section_top">
+                        <h2 class="sectiontop_txt"><span class="sctTop_ico rsc_ico_10"></span>이시각 1위 </h2>
+                    </div>
+                    <div class="nowtop_lst lst_quad">
+                        <ul>
+                            <li data-tab="tab_1" class="on" title="선택됨">
+                                <button type="button" onclick="OpenVote2022.getPanseData(3)">광역단체장</button>
+                            </li>
+                            <li data-tab="tab_2">
+                                <button type="button" onclick="OpenVote2022.getSidoPanseHtmlRender()">기초단체장</button>
+                            </li>
+                            <li data-tab="tab_1">
+                                <button type="button" onclick="OpenVote2022.getPanseData(11)">교육감</button>
+                            </li>
+                            <li data-tab="tab_1">
+                                <button type="button" onclick="OpenVote2022.getPanseData(2)">보궐선거</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--이시각1위: 광역단체장, 교육감, 보궐선거 -->
+                    <div id="tab_1" class="nowtop_wrap hex_warp hex_allarea on">
+                        <div class="hex_list_bx">
+                            <ul id="hex_panse"></ul>
+                        </div>
+                        <div class="gvn_bx" id="uisuksuMap"></div>
+                    </div>
+                    <div id="tab_2" class="nowtop_wrap">
+                        <div class="blg_map_wrap">
+                            <div class="blg_map_bx">
+                                <ul id="hex_panse_2"></ul>
+                            </div>
+                            <div class="blg_map_popup" id="gicho_popup"></div>
+                        </div>
+                        <div class="gvn_bx" id="uisuksuMap_2"></div>
+                    </div>
+                </section>
+                <!-- 이시각 1위  Area End -->
+
+            </div>
+            <!-- //content -->
+        </div>
+        <!-- //container -->
+        <!-- footer -->
+        <footer id="footer" class="footer"></footer>
+        <!-- //footer -->
+    </div>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P2734Q13EB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-P2734Q13EB');
+    </script>
+</body>
+
+</html>

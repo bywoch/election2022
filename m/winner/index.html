@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="robots" content="noindex,nofollow">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="title" content="선택 2022 - MBC NEWS">
+    <meta name="url" content="https://imnews.imbc.com/issue/vote2022/m/main_m.html">
+    <meta property="og:url" content="https://image.imnews.imbc.com/issue/2022vote/2022vote.png">
+    <meta property="og:title" content="선택 2022 제8회 전국동시지방선거 MBC NEWS">
+    <meta property="og:description" content="선택 2022 제8회 전국동시지방선거 기본과 원칙에 충실한 뉴스">
+    <meta property="og:site_name" content="선택 2022 MBC NEWS 제8회 전국동시지방선거">
+    <meta property="og:image" content="https://image.imnews.imbc.com/issue/2022vote/2022vote.png">
+    <meta property="og:locale" content="ko_KR">
+    <meta itemprop="name" content="MBC NEWS">
+    <meta itemprop="description" content="선택 2022 제8회 전국동시지방선거 기본과 원칙에 충실한 뉴스">
+    <meta itemprop="image" content="https://image.imnews.imbc.com/issue/2022vote/2022vote.png">
+    <link rel="shortcut icon" type="image/x-icon" href="https://image.imnews.imbc.com/issue/2022vote/favicon.ico">
+
+    <title>당선자 | 선택 2022 - MBC NEWS</title>
+
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/vote.ani.css">
+    <link rel="stylesheet" href="../css/graph.css">
+    <link rel="stylesheet" href="../css/m_research.css">
+    <link rel="stylesheet" href="../css/hexagon_map.css">
+    <script src="//imnews.imbc.com/issue/2022vote/js/devicecheck.js"></script>
+    <script src="https://imnews.imbc.com/page/include/js/lib/jquery-1.12.3.min.js"></script>
+    <script src="../js/vote.info.js"></script>
+    <script src="../js/common.js"></script>
+    <!-- 숫자 카운트 업 -->
+    <script src="../js/waypoints.min.js"></script>
+    <script src="../js/jquery.counterup.min.js"></script>
+    <script src="../js/sub.js"></script>
+
+    <script src="../js/winner.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.navi').scrollLeft(620);
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrap" class="sub tugaepyo winner">
+        <!-- u_skip -->
+        <div id="u_skip">
+            <a href="#content">본문 바로가기</a>
+            <a href="#navi">메뉴 바로가기</a>
+        </div>
+        <!-- //u_skip -->
+        <!-- header -->
+        <header id="header" class="header"></header>
+        <!-- //header -->
+        <!-- navigation -->
+        <nav id="navi" class="navi fliking">
+            <span class="nav_blur"></span>
+        </nav>
+        <!-- //navigation -->
+        <!-- container -->
+        <div id="container" class="container">
+            <!-- content -->
+            <div id="content">
+
+                <!-- 전국 개표율 Area Start -->
+                <section class="section winner_section">
+
+                    <div class="section_top" style="height:20px;">
+                        <h2 class="sectiontop_txt"></h2>
+                    </div>
+
+                    <div class="win_lst">
+                        <ul>
+                            <li class="on" title="선택됨" onclick="WinnerVote2022.idxHandler(1)"><button
+                                    type="button">선거종류별</button></li>
+                            <li><button type="button" onclick="WinnerVote2022.idxHandler(2)">지역별</button></li>
+                        </ul>
+                    </div>
+                    <div class="win_select_bx" id="type_selector">
+                        <select id="metroVotelankSelect" class="win_select" name="metroVotelankSelect" title="기초단체장 당선자"
+                            onchange="WinnerVote2022.typeCodeHandler()">
+                            <option value="3">광역단체장</option>
+                            <option value="4">기초단체장</option>
+                            <option value="5">광역의원</option>
+                            <option value="6">기초의원</option>
+                            <option value="8">광역의원비례</option>
+                            <option value="9">기초의원비례</option>
+                            <option value="11">교육감</option>
+                            <option value="10">교육의원</option>
+                            <option value="2">보궐선거</option>
+                        </select>
+                    </div>
+                    <div class="gvn_bx" id="uisuksuMap">
+                        <!--
+                        <p class="gvn_title"><strong>시·도지사</strong> 총 <span>17</span>석</p>
+                        <div class="gvn_lst">
+                            <ul>
+                                <li class="gvn_thumin"><span class="gvn_num">14</span>석 더불어민주당</li>
+                                <li class="gvn_ppp"><span class="gvn_num">4</span>석 국민의힘</li>
+                                <li class="gvn_justice"><span class="gvn_num">1</span>석 정의당</li>
+                                <li class="gvn_ect"><span class="gvn_num">1</span>석 기타</li>
+                                <li class="gvn_no"><span class="gvn_num">1</span>석 무소속</li>
+                            </ul>
+                        </div>
+                        -->
+                    </div>
+                    <div class="win_info">
+                        <!--개표 중 문구-->
+                    </div>
+                    <div class="win_select_bx" id="sub_select"></div>
+                    <div class="win_total" id="sub_title"></div>
+                    <div id="data_zone"></div>
+                    <!--
+                    <div class="win_wrap">
+                        <ul>
+                            <li>
+                                <span class="win_bx">
+                                    <span class="win_area">대구광역시장</span>
+                                    <span class="win_ctt">
+                                        <span class="win_null">잠시 후<br>당선자 정보가 업데이트 됩니다</span>
+                                    </span>
+                                </span>
+                            </li>
+
+                        </ul>
+                    </div>
+                    -->
+                    <div class="gvn_info" id="gvn_winner_footer" styled="display:none;">
+                        <ul>
+                            <li>해당 선거의 당선자 명단은 <strong><a href="https://www.nec.go.kr/site/lvt/main.do"
+                                        target="_blank">중앙선거관리위원회</a></strong>에서<br> 확인해주시기 바랍니다</li>
+                            <li>정당별 당선인이 0명인 경우, 해당 리스트에 노출되지 않습니다. </li>
+                            <li>비례대표 당선자는 정당별 비례대표의원의 득표 비율에 따라 실시간으로 변경될 수 있습니다. </li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- //역대 선거 아카이브 Area End -->
+
+            </div>
+            <!-- //content -->
+        </div>
+        <!-- //container -->
+        <!-- footer -->
+        <footer id="footer" class="footer"></footer>
+        <!-- //footer -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-P2734Q13EB"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-P2734Q13EB');
+        </script>
+</body>
+
+</html>

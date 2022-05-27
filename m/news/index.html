@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="robots" content="noindex,nofollow">
+
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="title" content="선택 2022 - MBC NEWS">
+    <!--<meta name="url" content="https://imnews.imbc.com/issue/vote2022/m/main_m.html">-->
+    <meta name="description" content="함께 만드는 내일, 선택 2022">
+    <!--<meta property="og:url" content="https://imnews.imbc.com/issue/vote2022/m/main_m.html">-->
+    <meta property="og:title" content="선택 2022 - MBC NEWS">
+    <meta property="og:description" content="함께 만드는 내일, 선택 2022">
+    <meta property="og:site_name" content="선택 2022 - MBC NEWS">
+    <meta property="og:image" content="https://image.imnews.imbc.com/issue/2022vote/2022vote.png">
+    <!--<meta property="og:image" content="https://image.imnews.imbc.com/issue/vote2022/images/2022vote.jpg">-->
+    <meta property="og:locale" content="ko_KR">
+    <meta itemprop="name" content="선택 2022 - MBC NEWS">
+    <meta itemprop="description" content="함께 만드는 내일, 선택 2022">
+    <!--<meta itemprop="image" content="https://image.imnews.imbc.com/issue/vote2022/images/2022vote.jpg">-->
+    <!--<link rel="shortcut icon" type="image/x-icon" href="https://image.imnews.imbc.com/issue/vote2022/images/favicon.ico">-->
+
+    <title>뉴스 | 선택 2022 - MBC NEWS</title>
+    <link rel="stylesheet" href="../css/sub.css">
+    <script src="//imnews.imbc.com/issue/2022vote/js/devicecheck.js"></script>
+    <script src="https://imnews.imbc.com/page/include/js/lib/jquery-1.12.3.min.js"></script>
+    <script src="../js/vote.info.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/sub.js"></script>
+    <script defer src="../js/news.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.navi').scrollLeft(620);
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrap" class="sub news">
+        <!-- u_skip -->
+        <div id="u_skip">
+            <a href="#content">본문 바로가기</a>
+            <a href="#navi">메뉴 바로가기</a>
+        </div>
+        <!-- //u_skip -->
+        <!-- header -->
+        <header id="header" class="header"></header>
+        <!-- //header -->
+        <!-- navigation -->
+        <nav id="navi" class="fliking navi">
+            <span class="nav_blur"></span>
+        </nav>
+        <!-- //navigation -->
+        <!-- container -->
+        <div id="container" class="container">
+            <!-- content -->
+            <div id="content">
+
+                <!-- 최신뉴스 Area Start -->
+                <section class="section hotNews_section">
+                    <div class="section_top">
+                        <a href="#" target="_blank">
+                            <h2 class="sectiontop_txt"><span class="sctTop_ico rsc_ico_03"></span>최신 선거 뉴스</h2>
+                        </a>
+                    </div>
+                    <div class="content_bx headline_wrap">
+                        <div class="headline_list">
+                            <ul id="recent_first_area"></ul>
+                        </div>
+                        <div class="news_bx hot_news">
+                            <ul id="recent_area"></ul>
+                        </div>
+                        <div class="keyword_more" id="recentMore">
+                            <button type="button" onclick="javascript:NewsVote2022.recentMore();">더보기</button>
+                        </div>
+                    </div>
+                </section>
+                <!-- // 최신뉴스 Area End -->
+
+                <!-- 영상뉴스 Area Start -->
+                <section class="section videoList_section">
+                    <div class="section_top">
+                        <h2 class="sectiontop_txt"><span class="sctTop_ico rsc_ico_05"></span>영상 뉴스</h2>
+                    </div>
+                    <div class="content_bx videoList_wrap">
+                        <div class="videoList_Title newsSecondTitle"><span class="newsTitle_ico nt_ic_01"></span>
+                            <p>[뉴스데스크]</p>
+                        </div>
+                        <div class="news_bx video_news">
+                            <ul id="newsdesk_area"></ul>
+                        </div>
+                        <div class="videoList_more">
+                            <ul>
+                                <li onclick="javascript:NewsVote2022.clickMore(1);"><button id="deskMore"
+                                        type="button">더보기<span class="vnlst_btn up_ico"></span></button></li>
+                                <li onclick="javascript:NewsVote2022.clickClose(1);"><button type="button">닫기<span
+                                            class=" vnlst_btn
+                                        down_ico"></span></button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content_bx videoList_wrap">
+                        <div class="videoList_Title newsSecondTitle"><span class="newsTitle_ico nt_ic_02"></span>
+                            <p>[뉴스외전]</p>
+                        </div>
+                        <div class="news_bx video_news">
+                            <ul id="story_area"></ul>
+                        </div>
+                        <div class="videoList_more">
+                            <ul>
+                                <li onclick="javascript:NewsVote2022.clickMore(2);"><button id="storyMore"
+                                        type="button">더보기<span class="vnlst_btn up_ico"></span></button></li>
+                                <li onclick="javascript:NewsVote2022.clickClose(2);"><button type="button">닫기<span
+                                            class="vnlst_btn down_ico"></span></button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content_bx videoList_wrap">
+                        <div class="videoList_Title newsSecondTitle"><span class="newsTitle_ico nt_ic_03"></span>
+                            <p>[뉴스투데이]</p>
+                        </div>
+                        <div class="news_bx video_news">
+                            <ul id="today_area"></ul>
+                        </div>
+                        <div class="videoList_more">
+                            <ul>
+                                <li onclick="javascript:NewsVote2022.clickMore(3);"><button id="todayMore"
+                                        type="button">더보기<span class="vnlst_btn up_ico"></span></button></li>
+                                <li onclick="javascript:NewsVote2022.clickClose(3);"><button type="button">닫기<span
+                                            class="vnlst_btn down_ico"></span></button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <!-- // 영상뉴스 Area End -->
+
+            </div>
+            <!-- //content -->
+        </div>
+        <!-- //container -->
+        <!-- footer -->
+        <footer id="footer" class="footer"></footer>
+        <!-- //footer -->
+    </div>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P2734Q13EB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-P2734Q13EB');
+    </script>
+</body>
+
+</html>

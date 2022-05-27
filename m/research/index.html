@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="robots" content="noindex,nofollow">
+
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="title" content="선택 2022 - MBC NEWS">
+    <!--<meta name="url" content="https://imnews.imbc.com/issue/vote2022/m/main_m.html">-->
+    <meta name="description" content="함께 만드는 내일, 선택 2022">
+    <!--<meta property="og:url" content="https://imnews.imbc.com/issue/vote2022/m/main_m.html">-->
+    <meta property="og:title" content="선택 2022 - MBC NEWS">
+    <meta property="og:description" content="함께 만드는 내일, 선택 2022">
+    <meta property="og:site_name" content="선택 2022 - MBC NEWS">
+    <meta property="og:image" content="https://image.imnews.imbc.com/issue/2022vote/2022vote.png">
+    <!--<meta property="og:image" content="https://image.imnews.imbc.com/issue/vote2022/images/2022vote.jpg">-->
+    <meta property="og:locale" content="ko_KR">
+    <meta itemprop="name" content="선택 2022 - MBC NEWS">
+    <meta itemprop="description" content="함께 만드는 내일, 선택 2022">
+    <!--<meta itemprop="image" content="https://image.imnews.imbc.com/issue/vote2022/images/2022vote.jpg">-->
+    <!--<link rel="shortcut icon" type="image/x-icon" href="https://image.imnews.imbc.com/issue/vote2022/images/favicon.ico">-->
+
+    <title>판세 | 선택 2022 - MBC NEWS</title>
+    <script src="//imnews.imbc.com/issue/2022vote/js/devicecheck.js"></script>
+    <script src="https://www.imbc.com/commons/libs/jquery-1.12.3.min.js"></script>
+    <!--
+    <script src="https://poll-mbc.co.kr/data/new/dailyApprove.js"></script>
+    <script src="https://poll-mbc.co.kr/data/candidate_approve_data.js"></script>
+    <script src="https://poll-mbc.co.kr/data/candidate_approve_two_1.js"></script>
+    <script src="https://poll-mbc.co.kr/data/candidate_scatter_two_1.js"></script>
+    -->
+    <!-- highchart ui -->
+    <!--<script src="../js/graph.js"></script>-->
+    <script src="../js/doughnutGraph.js"></script>
+    <!--메인 CSS, JS-->
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/vote.ani.css">
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/graph.css">
+    <link rel="stylesheet" href="../css/m_research.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <!-- highchart -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <!-- 여론M data -->
+    <script src="https://vote2022local.imbc.com/Poll/Approve?sido=Seoul"></script>
+    <script src="https://vote2022local.imbc.com/Poll/Data"></script>
+    <script src="https://vote2022local.imbc.com/Poll/Approve?sido=GG"></script>
+    <script src="https://vote2022local.imbc.com/Poll/Approve?sido=GJ"></script>
+    <script src="https://vote2022local.imbc.com/Poll/Approve?sido=IC"></script>
+    <script src="https://vote2022local.imbc.com/Poll/Approve?sido=DG"></script>
+    <script src="https://vote2022local.imbc.com/Poll/Approve?sido=CB"></script>
+    <script src="https://vote2022local.imbc.com/Poll/Approve?sido=CN"></script>
+    <script src="https://vote2022local.imbc.com/Poll/Approve?sido=KW"></script>
+    <script src="https://vote2022local.imbc.com/Poll/Approve?sido=DJ"></script>
+    <script src="https://vote2022local.imbc.com/Poll/Approve?sido=JN"></script>
+    <script src="https://vote2022local.imbc.com/Poll/Approve?sido=JB"></script>
+    <script src="https://vote2022local.imbc.com/Poll/Approve?sido=BS"></script>
+    <script src="https://vote2022local.imbc.com/Poll/Approve?sido=DG"></script>
+    <script src="https://vote2022local.imbc.com/Poll/Approve?sido=KN"></script>
+    <script src="https://vote2022local.imbc.com/Poll/Approve?sido=GJ"></script>
+    <script src="https://vote2022local.imbc.com/Poll/Approve?sido=JJ"></script>
+    <script src="https://vote2022local.imbc.com/Poll/Approve?sido=SJ"></script>
+    <script src="https://vote2022local.imbc.com/Poll/Approve?sido=Ulsan"></script>
+    <script src="https://vote2022local.imbc.com/Poll/Approve?sido=JB"></script>
+    <script src="https://vote2022local.imbc.com/Poll/Approve?sido=KB"></script>
+    <script src="../js/graph.js"></script>
+    <script src="//imnews.imbc.com/issue/2022vote/js/devicecheck.js"></script>
+    <script src="../js/vote.info.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/slick.js"></script>
+    <script src="../js/sub.js"></script>
+    <script src="../js/research.js"></script>
+    <script src="../js/m_research.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.navi').scrollLeft(620);
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrap" class="sub research">
+        <!-- u_skip -->
+        <div id="u_skip">
+            <a href="#content">본문 바로가기</a>
+            <a href="#navi">메뉴 바로가기</a>
+        </div>
+        <!-- //u_skip -->
+        <!-- header -->
+        <header id="header" class="header"></header>
+        <!-- //header -->
+        <!-- navigation -->
+        <nav id="navi" class="fliking navi">
+            <span class="nav_blur"></span>
+        </nav>
+        <!-- //navigation -->
+        <!-- container -->
+        <div id="container" class="container">
+            <!-- content -->
+            <div id="content">
+                <!-- MBC 여론조사 Area Start -->
+                <section class="section research_section">
+                    <div class="section_top">
+                        <h2 class="sectiontop_txt"><span class="sctTop_ico rsc_ico_02"></span>여론조사</h2>
+                    </div>
+                    <div class="poll-date">
+                        <ul id="pollKeys"></ul>
+                    </div>
+                    <!-- poll Content -->
+                    <div class="poll-content"></div>
+                </section>
+                <!-- // MBC 여론조사 Area End -->
+
+                <!-- MBC 여론뉴스 Area Start -->
+                <section class="section mbc-research">
+                    <div class="section_top">
+                        <h2 class="sectiontop_txt"><span class="sctTop_ico rsc_ico_03"></span>MBC 여론뉴스</h2>
+                    </div>
+                    <div class="content_bx">
+                        <div class="newsTop_bx" id="research_top"></div>
+                        <div class="news_bx">
+                            <ul id="research_ul"></ul>
+                        </div>
+                        <div class="keyword_more">
+                            <button type="button" onclick="ResearchVote2022.ResearchMore()">더보기</button>
+                        </div>
+                    </div>
+                    <div class="virtual_title" id="d3"></div>
+                </section>
+                <!-- // MBC 여론뉴스 Area End -->
+                <!--여론조사M Area Start -->
+                <section class="section poll_section">
+                    <div class="section_top">
+                        <a href="http://poll-mbc.co.kr/" target="_blank">
+                            <h2 class="sectiontop_txt"><span class="sctTop_ico rsc_ico_04"></span>여론M<span
+                                    class="source_txt">*타 기관 여론조사 포함</span></h2>
+                            <span class="sectiontop_arrow"></span>
+                        </a>
+                    </div>
+                    <div class="content_bx poll_wrap">
+                        <div class="graph-custom">
+                            <div id="region-graph"></div>
+                            <div class="tab-container">
+                                <div class="tab-button" value="서울">서울</div>
+                                <div class="tab-button" value="경기">경기</div>
+                                <div class="tab-button" value="인천">인천</div>
+                                <div class="tab-button" value="대전">대전</div>
+                                <div class="tab-button" value="충북">충북</div>
+                                <div class="tab-button" value="충남">충남</div>
+                                <div class="tab-button" value="경남">경남</div>
+                                <div class="tab-button" value="대구">대구</div>
+                                <div class="tab-button" value="경북">경북</div>
+                                <div class="tab-button" value="광주">광주</div>
+                                <div class="tab-button" value="전북">전북</div>
+                                <div class="tab-button" value="전남">전남</div>
+                                <div class="tab-button" value="강원">강원</div>
+                                <div class="tab-button" value="제주">제주</div>
+                                <div class="tab-button" value="세종">세종</div>
+                                <div class="tab-button" value="울산">울산</div>
+                                <div class="tab-button" value="부산">부산</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- //여론조사M Area End -->
+            </div>
+            <!-- //content -->
+        </div>
+        <!-- //container -->
+        <!-- footer -->
+        <footer id="footer" class="footer"></footer>
+        <!-- //footer -->
+    </div>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P2734Q13EB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-P2734Q13EB');
+    </script>
+</body>
+
+</html>

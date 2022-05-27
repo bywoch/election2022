@@ -1,0 +1,595 @@
+@charset "UTF-8";
+@import url('https://font.imbc.com/noto/noto.css');
+
+.hex_warp {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.hex_warp {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.hex_warp .hex_list_bx {
+    width: 270px;
+    height: 740px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.hex_title {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'notokr-bold';
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.hex {
+    position: absolute;
+}
+
+.hex .hex_bx {
+    width: 40px;
+    height: 64px;
+    background: #9f59cc;
+    position: relative;
+    left: 20px;
+    box-sizing: border-box;
+}
+
+.hex .hex_bx::before,
+.hex .hex_bx::after {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: 0;
+    border-top: 32px solid transparent;
+    border-bottom: 32px solid transparent;
+}
+
+.hex .hex_bx::before {
+    left: -20px;
+    border-right: 20px solid #9f59cc;
+}
+
+.hex .hex_bx::after {
+    right: -20px;
+    border-left: 20px solid #9f59cc;
+}
+
+.hex .hex_bx {
+    text-align: center;
+    color: #fff;
+}
+
+.hex .hex_bx p,
+.hex .hex_bx span {
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.hex .hex_bx .hex_area {
+    font-weight: bold;
+    padding-top: 7px;
+}
+
+.hex .hex_bx .hl_num {
+    font-size: 11px;
+    line-height: 64px;
+}
+
+.hex_areavote .hex .hex_bx .hex_area {
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+/* 투표전 */
+.hex_bx.party_0 {
+    background: #a49f82;
+}
+
+.hex_bx.party_0::before {
+    border-right: 20px solid #a49f82;
+}
+
+.hex_bx.party_0::after {
+    border-left: 20px solid #a49f82;
+}
+
+
+/* 더불어민주당 */
+.hex_bx.party_1 {
+    background: #5996cc;
+}
+
+.hex_bx.party_1::before {
+    border-right: 20px solid #5996cc;
+}
+
+.hex_bx.party_1::after {
+    border-left: 20px solid #5996cc;
+}
+
+/* 국민의힘 */
+.hex_bx.party_2 {
+    background: #a84747;
+}
+
+.hex_bx.party_2::before {
+    border-right: 20px solid #a84747;
+}
+
+.hex_bx.party_2::after {
+    border-left: 20px solid #a84747;
+}
+
+/* 정의당 */
+.hex_bx.party_3 {
+    background: #c19c47;
+}
+
+.hex_bx.party_3::before {
+    border-right: 20px solid #c19c47;
+}
+
+.hex_bx.party_3::after {
+    border-left: 20px solid #c19c47;
+}
+
+/* 교육감 */
+.hex_bx.hex_soe {
+    background: #4b686c;
+}
+
+.hex_bx.hex_soe::before {
+    border-right: 20px solid #4b686c;
+}
+
+.hex_bx.hex_soe::after {
+    border-left: 20px solid #4b686c;
+}
+
+/* 기타 */
+.hex_bx.party_98 {
+    background: #9f59cc;
+    ;
+}
+
+.hex_bx.party_98::before {
+    border-right: 20px solid #9f59cc;
+    ;
+}
+
+.hex_bx.party_98::after {
+    border-left: 20px solid #9f59cc;
+    ;
+}
+
+/* 무소속 */
+.hex_bx.party_99 {
+    background: #b4b4b4;
+}
+
+.hex_bx.party_99::before {
+    border-right: 20px solid #b4b4b4;
+}
+
+.hex_bx.party_99::after {
+    border-left: 20px solid #b4b4b4;
+}
+
+/* 지역별 투표율 */
+.hex_areavote .hex_bx {
+    background: #dde5e5;
+    color: #313131;
+}
+
+.hex_areavote .hex_bx::before {
+    border-right: 20px solid #dde5e5;
+}
+
+.hex_areavote .hex_bx::after {
+    border-left: 20px solid #dde5e5;
+}
+
+/* 지역별 투표율 최고 */
+.arvt_high .hex_bx {
+    background: #8957a1;
+    color: #fff;
+}
+
+.arvt_high .hex_bx::before {
+    border-right: 20px solid #8957a1;
+}
+
+.arvt_high .hex_bx::after {
+    border-left: 20px solid #8957a1;
+}
+
+/* 지역별 투표율 최저 */
+.arvt_low .hex_bx {
+    background: #477b89;
+    color: #fff;
+}
+
+.arvt_low .hex_bx::before {
+    border-right: 20px solid #477b89;
+}
+
+.arvt_low .hex_bx::after {
+    border-left: 20px solid #477b89;
+}
+
+.hex .hex_bx.hex_areavote .hex_area {
+    padding-top: 14px;
+}
+
+.hex_avt_info {
+    display: inline-block;
+    position: absolute;
+    bottom: 40px;
+    right: 50%;
+    margin-right: -120px;
+}
+
+.hex_avt_info ul {
+    overflow: hidden;
+}
+
+.hex_avt_info ul li {
+    float: left;
+    position: relative;
+    padding-left: 18px;
+}
+
+.hex_avt_info ul li:after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+
+.hex_avt_info ul li.hai_hight:after {
+    background: #8957a1;
+}
+
+.hex_avt_info ul li.hai_low:after {
+    background: #477b89;
+}
+
+.arvt_shadow:after {
+    content: '';
+    width: 64px;
+    height: 37px;
+    padding-right: 40px;
+    background: url(https://image.imnews.imbc.com/issue/2022vote/m/images/arvt_shadow_bg.png) 0 0 no-repeat;
+    background-size: 64px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.nh-line-1 {
+    left: 0px;
+}
+
+.nh-line-2 {
+    left: 62px;
+}
+
+.nh-line-3 {
+    left: 124px;
+}
+
+.nh-line-4 {
+    left: 186px;
+}
+
+.nh-1-1 {
+    top: 0px;
+}
+
+.nh-1-2 {
+    top: 66px;
+}
+
+.nh-1-3 {
+    top: 132px;
+}
+
+.nh-1-4 {
+    top: 198px;
+}
+
+.nh-1-5 {
+    top: 264px;
+}
+
+.nh-1-6 {
+    top: 330px;
+}
+
+.nh-1-7 {
+    top: 396px;
+}
+
+.nh-1-8 {
+    top: 462px;
+}
+
+.nh-1-9 {
+    top: 528px;
+}
+
+.nh-1-10 {
+    top: 594px;
+}
+
+.nh-2-1 {
+    top: 33px;
+}
+
+.nh-2-2 {
+    top: 99px;
+}
+
+.nh-2-3 {
+    top: 165px;
+}
+
+.nh-2-4 {
+    top: 231px;
+}
+
+.nh-2-5 {
+    top: 297px;
+}
+
+.nh-2-6 {
+    top: 363px;
+}
+
+.nh-2-7 {
+    top: 429px;
+}
+
+.nh-2-8 {
+    top: 495px;
+}
+
+.nh-2-9 {
+    top: 561px;
+}
+
+.nh-2-10 {
+    top: 627px;
+}
+
+.nh-3-1 {
+    top: 0px;
+}
+
+.nh-3-2 {
+    top: 66px;
+}
+
+.nh-3-3 {
+    top: 132px;
+}
+
+.nh-3-4 {
+    top: 198px;
+}
+
+.nh-3-5 {
+    top: 264px;
+}
+
+.nh-3-6 {
+    top: 330px;
+}
+
+.nh-3-7 {
+    top: 396px;
+}
+
+.nh-3-8 {
+    top: 462px;
+}
+
+.nh-3-9 {
+    top: 528px;
+}
+
+.nh-3-10 {
+    top: 594px;
+}
+
+.nh-4-1 {
+    top: 33px;
+}
+
+.nh-4-2 {
+    top: 99px;
+}
+
+.nh-4-3 {
+    top: 165px;
+}
+
+.nh-4-4 {
+    top: 231px;
+}
+
+.nh-4-5 {
+    top: 297px;
+}
+
+.nh-4-6 {
+    top: 363px;
+}
+
+.nh-4-7 {
+    top: 429px;
+}
+
+.nh-4-8 {
+    top: 495px;
+}
+
+.nh-4-9 {
+    top: 561px;
+}
+
+.nh-4-10 {
+    top: 627px;
+}
+
+.hex_allarea {
+    background: url(https://image.imnews.imbc.com/issue/2022vote/m/images/hex_allarea_bg.png) 0px 150px no-repeat;
+    background-size: 320px;
+}
+
+.hex_seoul .nh-1-2 .hex_area,
+.hex_seoul .nh-1-4 .hex_area,
+.hex_seoul .nh-3-4 .hex_area,
+.hex_busan .nh-3-2 .hex_area,
+.hex_busan .nh-3-4 .hex_area,
+.hex_inchon .nh-3-3 .hex_area,
+.hex_gyonggi .nh-2-2 .hex_area,
+.hex_gyonggi .nh-3-3 .hex_area,
+.hex_gyonggi .nh-4-3 .hex_area {
+    font-size: 10px;
+}
+
+.hex_congress .hexnum .hex_area,
+.hex_revote .hex .hex_area,
+.hex_warp .hex .hex_rearea {
+    font-size: 10px;
+    width: 60px;
+    text-align: center;
+    position: relative;
+    right: 11px;
+    z-index: 999;
+}
+
+.hex_gwangju .hex_list_bx,
+.hex_daejeon .hex_list_bx,
+.hex_ulsan .hex_list_bx,
+.hex_congress .hex_list_bx {
+    top: 30px;
+    left: 60px;
+}
+
+.hex_allarea .nh-1-6 {
+    top: 345px;
+    left: -15px;
+}
+
+.hex_inchon .nh-1-2 {
+    top: 36px;
+}
+
+.hex_inchon .nh-1-5 {
+    top: 294px;
+}
+
+.hex_chungnam .nh-1-6,
+.hex_chungnam .nh-3-6 {
+    top: 360px;
+}
+
+.hex_chungnam .nh-2-5 {
+    top: 327px;
+}
+
+.hex_gyongbuk .nh-4-1 {
+    top: 10px;
+    left: 210px;
+}
+
+.hex_gyongnam .nh-1-5 {
+    top: 294px;
+}
+
+.hex_gyongnam .nh-4-5 {
+    top: 347px;
+}
+
+.hex_allarea .hex_list_bx {
+    height: 450px;
+}
+
+.hex_seoul .hex_list_bx {
+    height: 520px;
+}
+
+.hex_busan .hex_list_bx {
+    height: 350px;
+}
+
+.hex_daegu .hex_list_bx {
+    height: 290px;
+}
+
+.hex_inchon .hex_list_bx {
+    height: 420px;
+}
+
+.hex_gwangju .hex_list_bx {
+    height: 225px;
+}
+
+.hex_daejeon .hex_list_bx {
+    height: 225px;
+}
+
+.hex_ulsan .hex_list_bx {
+    height: 260px;
+}
+
+.hex_gyonggi .hex_list_bx {
+    height: 650px;
+}
+
+.hex_gangwon .hex_list_bx {
+    height: 490px;
+}
+
+.hex_chungbuk .hex_list_bx {
+    height: 360px;
+}
+
+.hex_chungnam .hex_list_bx {
+    height: 390px;
+}
+
+.hex_jeonbuk .hex_list_bx {
+    height: 320px;
+}
+
+.hex_jeonnam .hex_list_bx {
+    height: 455px;
+}
+
+.hex_gyongbuk .hex_list_bx {
+    height: 520px;
+}
+
+.hex_gyongnam .hex_list_bx {
+    height: 470px;
+}
+
+.hex_congress .hex_list_bx {
+    height: 200px;
+}
+
+.hex_revote .hex_list_bx {
+    height: 320px;
+}

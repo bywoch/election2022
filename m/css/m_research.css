@@ -1,0 +1,2018 @@
+@charset "UTF-8";
+
+h2.sub-title {
+    padding-bottom: 13px;
+    border-bottom: 1px solid #ddd;
+}
+
+h2.sub-title span {
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+    font-family: 'notokr-bold';
+    font-size: 22px;
+}
+
+/* poll color */
+/*국민의힘*/
+.party_1 .num {
+    color: #ad4949 !important;
+}
+
+/*더불어민주당*/
+.party_2 .num {
+    color: #5996cc !important;
+}
+
+/*정의당*/
+.party_3 .num {
+    color: #cfa84d !important;
+}
+
+/*더불어민주당*/
+.party_1 .bar {
+    background: #df4551 !important;
+}
+
+/*국민의힘*/
+.party_2 .bar {
+    background: #3584fd !important;
+}
+
+/*정의당*/
+.party_3 .bar {
+    background: #ffea01 !important;
+}
+
+/*기타*/
+.party_etc .bar {
+    background: #9f59cc !important;
+}
+
+/*무소속*/
+.party_no .bar {
+    background: #b4b4b4 !important;
+}
+
+/*더불어민주당*/
+.bar-vertical .party_1 .bar:before {
+    background: #df4551 !important;
+}
+
+/*국민의힘*/
+.bar-vertical .party_2 .bar:before {
+    background: #3584fd !important;
+}
+
+/*정의당*/
+.bar-vertical .party_3 .bar:before {
+    background: #ffea01 !important;
+}
+
+/*기타*/
+.bar-vertical .party_etc .bar:before {
+    background: #9f59cc !important;
+    ;
+}
+
+/*무소속*/
+.bar-vertical .party_no .bar:before {
+    background: #b4b4b4 !important;
+    ;
+}
+
+/*국민의힘*/
+.bar-horizontal .party_1 .bar {
+    background: #ad4949 url(https://image.imnews.imbc.com/issue/2022vote/m/images/party_bar1.jpg) 0 -8px repeat-x !important;
+}
+
+/*더불어민주당*/
+.bar-horizontal .party_2 .bar {
+    background: #5996cc url(https://image.imnews.imbc.com/issue/2022vote/m/images/party_bar2.jpg) 0 -8px repeat-x !important;
+}
+
+/*정의당*/
+.bar-horizontal .party_3 .bar {
+    background: #c67148 url(https://image.imnews.imbc.com/issue/2022vote/m/images/party_bar3.jpg) 0 -8px repeat-x !important;
+}
+
+/*기타*/
+.bar-horizontal .party_etc .bar {
+    background: #9f59cc;
+}
+
+/*무소속*/
+.bar-horizontal .party_no .bar {
+    background: #b4b4b4;
+}
+
+.color1 {
+    background: #6bb8b3 url(https://image.imnews.imbc.com/issue/2022vote/m/images/color_bar1.jpg) 0 -40px repeat-x;
+}
+
+.color2 {
+    background: #724888 url(https://image.imnews.imbc.com/issue/2022vote/m/images/color_bar2.jpg) 0 -40px repeat-x;
+}
+
+.color3 {
+    background: #465f88 url(https://image.imnews.imbc.com/issue/2022vote/m/images/color_bar3.jpg) 0 -40px repeat-x;
+}
+
+.color4 {
+    background: #97aab6 url(https://image.imnews.imbc.com/issue/2022vote/m/images/color_bar4.jpg) 0 -40px repeat-x;
+}
+
+.color5 {
+    background: #467b88 url(https://image.imnews.imbc.com/issue/2022vote/m/images/color_bar5.jpg) 0 -40px repeat-x;
+}
+
+.color6 {
+    background: #48446d url(https://image.imnews.imbc.com/issue/2022vote/m/images/color_bar6.jpg) 0 -40px repeat-x;
+}
+
+.color7 {
+    background: #d1c0a5 url(https://image.imnews.imbc.com/issue/2022vote/m/images/color_bar7.jpg) 0 -40px repeat-x;
+}
+
+.color8 {
+    background: #9ebbb9 url(https://image.imnews.imbc.com/issue/2022vote/m/images/color_bar8.jpg) 0 -40px repeat-x;
+}
+
+.color9 {
+    background: #918199 url(https://image.imnews.imbc.com/issue/2022vote/m/images/color_bar9.jpg) 0 -40px repeat-x;
+}
+
+.color10 {
+    background: #808998 url(https://image.imnews.imbc.com/issue/2022vote/m/images/color_bar10.jpg) 0 -40px repeat-x;
+}
+
+.color11 {
+    background: #d2d2d2 url(https://image.imnews.imbc.com/issue/2022vote/m/images/color_bar11.jpg) 0 -40px repeat-x;
+}
+
+.color12 {
+    background: #787878 url(https://image.imnews.imbc.com/issue/2022vote/m/images/color_bar12.jpg) 0 -40px repeat-x;
+}
+
+.poll-top {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.poll-top .poll-graph {
+    background: #fafafa;
+}
+
+.poll-top .poll-graph .poll_title {
+    text-align: center;
+}
+
+.poll-top .poll-graph h3 {
+    font-size: 18px;
+    letter-spacing: -0.04rem;
+    color: #000;
+    padding: 0 0 20px;
+    padding-bottom: 0;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+}
+
+.poll-top .poll-graph h3 span {
+    color: #a27b63;
+    font-family: 'notokr-bold';
+    font-weight: bold;
+}
+
+.poll-date {
+    width: 90%;
+    max-width: 380px;
+    min-width: 290px;
+    padding: 20px 0 10px;
+    margin: 0 auto;
+    overflow: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.poll-date ul {
+    overflow: hidden;
+    display: table;
+}
+
+.poll-date ul li {
+    width: 125px;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #d2d2d2;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.poll-date ul li.pd_mbc {
+    background: #fdf3ee;
+}
+
+.poll-date ul li.pd_mbc.on {
+    background: #dfa59b;
+}
+
+.poll-date ul li:first-child {
+    margin-left: 0;
+}
+
+.poll-date ul li.on {
+    color: #fff;
+    border: none;
+    background: #a27b63;
+    font-family: 'notokr-bold';
+    font-weight: bold;
+}
+
+.poll-date li button {
+    height: 50px;
+    line-height: 20px;
+    width: 100%;
+    display: block;
+}
+
+.poll-date li.on button {
+    color: #fff;
+    background: none;
+}
+
+.poll-date .slick-slide {
+    width: 125px;
+    margin-left: 10px;
+}
+
+.poll-date .slick-slide:first-child {
+    margin-left: 0;
+}
+
+.poll-left,
+.poll-top .poll-graph {
+    width: 100%;
+    margin: 0 auto;
+    float: none;
+}
+
+.poll-top .poll-graph {
+    padding-bottom: 20px;
+}
+
+.poll-left,
+.poll1 .graph-group,
+.poll2,
+.poll3 .graph-group,
+.poll4 {
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #b4b4b4;
+}
+
+.poll1,
+.poll2,
+.poll3,
+.poll4 {
+    width: 90%;
+}
+
+/* 막대 그래프 */
+.bar-vertical {
+    position: relative;
+    width: 264px;
+}
+
+.bar-vertical:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.bar-vertical>li {
+    position: relative;
+    float: left;
+    width: 34px;
+    height: 170px;
+    margin: 0 6px;
+}
+
+.wrap-bar {
+    overflow: hidden;
+    height: 170px;
+    position: relative;
+}
+
+.bar-vertical>li:first-child {
+    margin-left: 0;
+}
+
+.bar-vertical>li:last-child {
+    margin-right: 0;
+}
+
+.bar-vertical .move {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.bar-vertical .num {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    color: #b4b4b4;
+}
+
+.bar-vertical .txt {
+    display: block;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #555;
+    line-height: 20px;
+}
+
+.bar-vertical li:last-child .txt {
+    bottom: -50px;
+}
+
+.bar-vertical .bar {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 34px;
+    background: #b4b4b4;
+}
+
+.bar-vertical .bar:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -15px;
+    width: 34px;
+    height: 15px;
+    background: #b4b4b4;
+    border-radius: 100px 100px 0px 0px;
+}
+
+.bar-horizontal {
+    position: relative;
+}
+
+.bar-horizontal:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.bar-horizontal>li {
+    position: relative;
+    width: 150px;
+    height: 20px;
+    padding: 7px 0;
+    margin-top: 10px;
+}
+
+.bar-horizontal>li:first-child {
+    margin-top: 0;
+}
+
+.bar-horizontal .move {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+}
+
+.bar-horizontal .bar {
+    display: block;
+    position: absolute;
+    left: 0;
+    height: 20px;
+    background: #b4b4b4 url(https://image.imnews.imbc.com/issue/vote2022/m/images/party_bar7.jpg) 0 -8px repeat-x;
+}
+
+/* 가로 그래프 */
+.graph-group {
+    padding-top: 20px;
+}
+
+.graph-group .graph {
+    width: 101%;
+    height: 70px;
+    background: #fff;
+    position: unset;
+}
+
+.graph-group .graph:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.graph-group .graph>span {
+    display: block;
+    float: left;
+    position: relative;
+    height: 100%;
+}
+
+.graph-group .graph>span strong {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.graph-group .graph .line {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: #fff;
+}
+
+.graph-group .graph .color9 .line {
+    display: none;
+}
+
+.graph-group .grp-txt {
+    padding-top: 12px;
+}
+
+.graph-group .grp-txt>li {
+    width: 260px;
+    height: 20px;
+    margin-left: 0;
+}
+
+.graph-group .grp-txt>li:first-child {
+    margin-top: 0;
+}
+
+.graph-group .grp-txt>li>span {
+    display: inline-block;
+    font-size: 15px;
+    color: #000;
+    *display: inline;
+    *zoom: 1;
+}
+
+.graph-group .grp-txt .color {
+    position: relative;
+    top: 2px;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+}
+
+.graph-group .grp-txt .ft_rbt {
+    width: 52px;
+    margin: 0 10px 0 5px;
+    text-align: right;
+}
+
+.graph-group .grp-txt .txt {
+    width: 185px;
+}
+
+.graph {
+    width: 20px;
+    height: 160px;
+    position: absolute;
+}
+
+.graph .vert {
+    position: relative;
+}
+
+.graph .vert li {
+    position: relative;
+    width: 20px;
+    float: left;
+}
+
+.graph .vert li:first-child {
+    margin-right: 9px;
+}
+
+.graph .vert li .bar {
+    display: block;
+    background: #4b686c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20px;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.graph .vert .bar {
+    background: #774fd1;
+}
+
+/*교육감1*/
+.graph .vert li .bar.party_spid {
+    border: 1px solid #4b686c;
+    background: #4b686c url(https://image.imnews.imbc.com/issue/2022vote/m/images/vert_bar_bg.png);
+}
+
+/*교육감2*/
+.graph .vert li .bar.spid_second.party_spid {
+    border: 1px solid #6d8e93;
+    background: #6d8e93 url(https://image.imnews.imbc.com/issue/2022vote/m/images/vert_bar_bg.png);
+}
+
+/*더불어민주당*/
+.graph .vert li .bar.party_thumin {
+    border: 1px solid #5996cc;
+    background: #5996cc url(https://image.imnews.imbc.com/issue/2022vote/m/images/vert_bar_bg.png);
+}
+
+/*국민의힘*/
+.graph .vert li .bar.party_ppp {
+    border: 1px solid #ae4a4a;
+    background: #ae4a4a url(https://image.imnews.imbc.com/issue/2022vote/m/images/vert_bar_bg.png);
+}
+
+/*정의당*/
+.graph .vert li .bar.party_justice {
+    border: 1px solid #cfa84d;
+    background: #cfa84d url(https://image.imnews.imbc.com/issue/2022vote/m/images/vert_bar_bg.png);
+}
+
+/*국민의당*/
+.graph .vert li .bar.party_peoples {
+    border: 1px solid #c67148;
+    background: #c67148 url(https://image.imnews.imbc.com/issue/2022vote/m/images/vert_bar_bg.png);
+}
+
+/*기본소득당*/
+.graph .vert li .bar.party_bic {
+    border: 1px solid #00B1A0;
+    background: #00B1A0 url(https://image.imnews.imbc.com/issue/2022vote/m/images/vert_bar_bg.png);
+}
+
+/*국가혁명당 */
+.graph .vert li .bar.party_nrparty {
+    border: 1px solid #db2c2b;
+    background: #db2c2b url(https://image.imnews.imbc.com/issue/2022vote/m/images/vert_bar_bg.png);
+}
+
+/*우리공화당*/
+.graph .vert li .bar.party_orp {
+    border: 1px solid #009946;
+    background: #009946 url(https://image.imnews.imbc.com/issue/2022vote/m/images/vert_bar_bg.png);
+}
+
+/*진보당 */
+.graph .vert li .bar.party_jbp {
+    border: 1px solid #E60020;
+    background: #E60020 url(https://image.imnews.imbc.com/issue/2022vote/m/images/vert_bar_bg.png);
+}
+
+/*한류연합당*/
+.graph .vert li .bar.party_kwave {
+    border: 1px solid #573590;
+    background: #573590 url(https://image.imnews.imbc.com/issue/2022vote/m/images/vert_bar_bg.png);
+}
+
+/*혁명21*/
+.graph .vert li .bar.party_r21party {
+    border: 1px solid #034da2;
+    background: #034da2 url(https://image.imnews.imbc.com/issue/2022vote/m/images/vert_bar_bg.png);
+}
+
+/*기타*/
+.graph .vert li .bar.party_etc {
+    background: #9f59cc url(https://image.imnews.imbc.com/issue/2022vote/m/images/vert_bar_bg.png);
+}
+
+/*무소속*/
+.graph .vert li .bar.party_no {
+    border: 1px solid #7F8189;
+    background: #b4b4b4 url(https://image.imnews.imbc.com/issue/2022vote/m/images/vert_bar_bg.png);
+}
+
+/* custom */
+.poll1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.poll1 .bar-horizontal {
+    padding: 26px 0 27px 50px;
+}
+
+.poll1 .num {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 34px;
+    margin-left: 10px;
+    color: #c7c7c7;
+}
+
+.poll1 .txt {
+    display: block;
+    text-align: left;
+    width: 74px;
+    position: absolute;
+    left: -83px;
+    font-size: 13px;
+}
+
+.poll1 .bar-horizontal .party_9 .num {
+    color: #d1c0a6;
+}
+
+.poll1 .bar-horizontal .party_9 .bar {
+    background: #d1c0a5 url(https://image.imnews.imbc.com/issue/2022vote/m/images/party_bar6.jpg) 0 -8px repeat-x !important;
+}
+
+.poll1 .txt img {
+    vertical-align: middle;
+}
+
+.poll2 {
+    height: 390px;
+    background: url(https://image.imnews.imbc.com/issue/vote2022/m/images/bg-govern.jpg) right bottom no-repeat;
+    -webkit-background-size: 250px;
+    background-size: 250px;
+}
+
+.poll3 {
+    padding-bottom: 20px;
+}
+
+.poll3 .graph-group {
+    background: #fff;
+}
+
+.poll2 .graph-group,
+.poll3 .graph-group {
+    padding: 42px 30px;
+}
+
+.poll1 .graph-group,
+.poll2 {
+    padding-bottom: 20px;
+}
+
+.poll3 .graph-group .grp-txt>li {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.poll3 .graph-group .grp-txt>li>span {
+    float: left;
+}
+
+.poll3 .graph-group .grp-txt .ft_rbt {
+    position: unset;
+}
+
+.poll3 .graph-group .grp-txt .txt {
+    width: calc(100% - 82px);
+}
+
+/* 220425 bar 그래프 가로 추가*/
+.poll5 {
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.poll5 .graph-group_wrap {
+    padding: 45px 30px 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #b4b4b4;
+    margin-top: 20px;
+    background: #fff;
+}
+
+.poll5 .graph-group {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.poll5 .graph-group .graph {
+    width: 100.5%;
+    height: 30px;
+}
+
+.poll5 .graph-group .graph>span strong {
+    font-size: 12px;
+    width: 34px;
+    left: 50%;
+    margin-left: -17px;
+    bottom: 8px;
+    text-align: center;
+}
+
+.poll5 .graph-group .graph>span span.txt {
+    font-size: 12px;
+    position: absolute;
+    top: -17px;
+    display: inline-block;
+    width: 34px;
+    left: 50%;
+    margin-left: -17px;
+    font-family: 'notokr-bold';
+    z-index: 999;
+}
+
+.poll5 .color1 {
+    background: #5996cc url(https://image.imnews.imbc.com/issue/2022vote/m/images/party_bar1.jpg) 0 0 repeat-x;
+}
+
+.poll5 .color2 {
+    background: #ad4949 url(https://image.imnews.imbc.com/issue/2022vote/m/images/party_bar2.jpg) 0 0 repeat-x;
+}
+
+.poll5 .color3 {
+    background: #cfa84d url(https://image.imnews.imbc.com/issue/2022vote/m/images/party_bar3.jpg) 0 0 repeat-x;
+}
+
+.poll5 .color4 {
+    background: #c67148 url(https://image.imnews.imbc.com/issue/2022vote/m/images/party_bar4.jpg) 0 0 repeat-x;
+}
+
+.poll5 .color9 {
+    background: #d2d2d2 url(https://image.imnews.imbc.com/issue/2022vote/m/images/party_bar9.jpg) 0 0 repeat-x;
+}
+
+.poll5 .color1 span.txt {
+    color: #ad4949;
+}
+
+.poll5 .color2 span.txt {
+    color: #5996cc;
+}
+
+.poll5 .color3 span.txt {
+    color: #cfa84d;
+}
+
+.poll5 .color4 span.txt {
+    color: #c67148;
+}
+
+.poll5 .color7 span.txt {
+    color: #d1c0a5;
+}
+
+.poll5 .color9 span.txt {
+    color: #787878;
+}
+
+.poll5 .graph-group_wrap li {
+    margin-top: 20px;
+}
+
+.poll5 .graph-group_wrap li:first-child {
+    margin-top: 0;
+}
+
+.tit-research {
+    font-size: 18px;
+    font-family: 'notokr-bold';
+    text-align: center;
+    margin: 10px auto 0px;
+}
+
+/* issue */
+.research-con {
+    margin-top: 20px;
+    background: #fafafa;
+}
+
+.research-con .inner {
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+
+.research-con .inner h2,
+.poll-graph h2 {
+    font-family: 'notokr-bold';
+    line-height: 50px;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    color: #0c006b;
+}
+
+.research-con .inner dl dt {
+    display: block;
+    width: 320px;
+    margin: 0 auto;
+    color: #000;
+    padding-top: 30px;
+    text-align: center;
+    letter-spacing: -0.08em;
+}
+
+.research-con dl {
+    width: 90%;
+    max-width: 640px;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+    border-radius: 10px;
+    padding: 20px 0 80px;
+    margin-top: 30px;
+    background: #fff url(https://image.imnews.imbc.com/issue/vote2022/m/images/research-con_bg.jpg) top center no-repeat;
+    background-size: 110%;
+}
+
+.research-con dl dt {
+    font-size: 20px;
+    line-height: 30px;
+    overflow: hidden;
+    width: 320px;
+    margin: 10px auto 0;
+}
+
+.research-con dl dt span {
+    font-family: 'notokr-bold';
+    color: #01005b;
+}
+
+.research-corp {
+    font-size: 12px;
+    text-align: center;
+    background: #fafafa;
+    padding: 0 20px 20px;
+}
+
+.research-corp a {
+    font-family: 'notokr-bold';
+    text-decoration-line: underline;
+}
+
+.research-corp-bar {
+    display: inline-block;
+    width: 1px;
+    height: 8px;
+    margin: 0 8px;
+    background: #b4b4b4;
+}
+
+.poll4 {
+    background: none;
+}
+
+.poll4 dl {
+    width: 100%;
+    box-shadow: none;
+    margin-top: 0;
+    background: #fff;
+}
+
+.poll4 .inner {
+    padding-bottom: 0;
+}
+
+.poll4 .inner dl dt {
+    border-bottom: 1px solid #efeff0;
+    color: #000;
+    padding: 0 0 20px;
+    width: 90%;
+    font-size: 18px;
+    letter-spacing: -0.04rem;
+    line-height: 19px;
+}
+
+.poll4 .bar-vertical .txt {
+    font-weight: bold;
+}
+
+.poll4 .bar-vertical>li,
+.poll4 .wrap-bar {
+    height: 240px;
+}
+
+/* mbc poll */
+.mbc-research .wrap-vod {
+    margin-top: 40px;
+    background: none;
+}
+
+.mbc-research .wrap-vod .vod-list li {
+    width: 380px;
+    margin-right: 30px;
+}
+
+.mbc-research .wrap-vod .vod-list li:nth-child(3n) {
+    margin-right: 0;
+}
+
+.mbc-research .wrap-vod .vod-list li .img {
+    height: 214px;
+}
+
+.tab_bx {
+    display: none;
+}
+
+.tab_bx.current {
+    display: block;
+}
+
+/* 여론조사 개요 */
+.research-info {
+    background: #fafafa;
+    padding-bottom: 40px;
+}
+
+.research-info h3 {
+    font-family: 'notokr-bold';
+    line-height: 50px;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.research-info ul {
+    width: 100%;
+    max-width: 640px;
+    padding: 0 20px;
+}
+
+.research-info ul li {
+    overflow: hidden;
+    margin-top: 22px;
+}
+
+.research-info ul li:first-child {
+    margin-top: 0;
+}
+
+.research-info ul li span {
+    font-size: 12px;
+    display: block;
+}
+
+.research-info ul li .inf_title {
+    font-weight: bold;
+}
+
+.research-info ul li .inf_text {
+    margin-top: 5px;
+    line-height: 18px;
+}
+
+.research .section {
+    position: relative;
+}
+
+.virtual_title {
+    width: 100%;
+    height: 45px;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+}
+
+.citySelect {
+    font-weight: bold;
+    height: 32px;
+    line-height: 32px;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(https://image.imnews.imbc.com/issue/2022vote/m/images/icon-dropdown.png) no-repeat;
+    background-size: 14px;
+    background-position: 97% 11px;
+    color: #000;
+    padding-left: 20px;
+}
+
+.citySelect option {
+    font-weight: bold;
+    color: #000;
+}
+
+.cityCode {
+    margin: 20px auto;
+}
+
+@media all and (max-width: 350px) {
+    .research-con .inner dl dt {
+        width: 260px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media all and (min-width: 720px) {
+
+    .poll-left,
+    .poll-top .poll-graph,
+    .research-con dl {
+        width: 100%;
+    }
+}
+
+/* ※ 2022 지방선거 추가 ※ */
+.poll_title {
+    height: 60px;
+    position: relative;
+}
+
+.poll_title .poll_txt {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 60px;
+    margin-left: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.poll_title .poll_txt:after {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 5px;
+    background: #a27b63;
+    position: absolute;
+    top: 27px;
+    left: 8px;
+}
+
+.poll-top .poll-graph .poll_title .poll_txt:after {
+    left: 50%;
+    margin-left: -55px;
+}
+
+/* ※ 지역별 광역단체장 선호도 ※ */
+.mayor_section {
+    padding-bottom: 130px;
+}
+
+.mayor_wrap {
+    margin: 0 20px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #b4b4b4;
+    margin-bottom: 20px;
+    background: #fff;
+    position: relative;
+}
+
+.mayorCode {
+    width: 180px;
+    height: 52px;
+    margin: 0 auto;
+    display: block;
+    border: none;
+    color: #fff;
+    background: #a27b63 url(https://image.imnews.imbc.com/issue/2022vote/m/images/icon-dropdown_v2.png) no-repeat;
+    background-size: 14px;
+    background-position: 94% 19px;
+    padding-left: 50px;
+}
+
+.mayorCode option {
+    color: #fff;
+}
+
+.mayor_wrap .mayor_info {
+    background: #a27b63;
+    overflow: hidden;
+}
+
+.mayor_wrap .mayor_info p {
+    color: #000;
+    height: 40px;
+    line-height: 40px;
+}
+
+.mayor_wrap .mayor_info .mayor_zone {
+    height: 52px;
+    line-height: 52px;
+    font-family: 'notokr-bold';
+    text-align: center;
+    color: #fff;
+    background: #a27b63;
+}
+
+.mayor_wrap .mayor_bx {
+    overflow: hidden;
+    margin: 30px auto;
+    max-width: 375px;
+}
+
+.mayor_wrap .mayor_bx .mayor_candi {
+    width: 50%;
+    float: left;
+}
+
+.mayor_wrap .mayor_bx .mayor_candi .mayor_top {
+    position: relative;
+}
+
+.mayor_wrap .mayor_bx .mayor_candi .mayor_top .mayor_img {
+    width: 130px;
+    height: 130px;
+    border: 1px solid #cdcdcd;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.mayor_wrap .mayor_bx .mayor_candi .mayor_top p {
+    font-size: 14px;
+    font-family: 'notokr-bold';
+    width: 54px;
+    height: 54px;
+    line-height: 50px;
+    text-align: center;
+    position: absolute;
+    bottom: -15px;
+    color: #FFF;
+}
+
+.mayor_wrap .mayor_bx .mayor_candi .mayor_top p {
+    background: url(https://image.imnews.imbc.com/issue/2022vote/m/images/mayor_top_bg.png) 0 0 no-repeat;
+    background-size: 54px;
+}
+
+.mayor_candi.bel_cd1 .mayor_top p {
+    left: 20px;
+}
+
+.mayor_candi.bel_cd2 .mayor_top p {
+    right: 20px;
+}
+
+.mayor_wrap .mayor_bx .mayor_candi .mayor_bottom {
+    margin-top: 30px;
+    position: relative;
+}
+
+.mayor_wrap .mayor_bx .mayor_candi .mayor_bottom .mayor_txt {
+    text-align: center;
+}
+
+.mayor_wrap .mayor_bx .mayor_candi .mayor_bottom .mayor_txt p {
+    margin-top: 2px;
+}
+
+.mayor_wrap .mayor_bx .mayor_candi .mayor_bottom .mayor_txt .mayor_name,
+.mayor_wrap .mayor_bx .mayor_candi .mayor_bottom .mayor_txt .data-rate {
+    font-size: 16px;
+    color: #000;
+    font-family: 'notokr-bold';
+}
+
+.mayor_wrap .mayor_bx .mayor_candi .mayor_bottom .mayor_txt .mayor_party,
+.mayor_wrap .mayor_bx .mayor_wrap .mayor_candi .mayor_bottom .mayor_txt .mayor_polltxt,
+.mayor_wrap .mayor_bx .mayor_candi .mayor_bottom .mayor_txt .mayor_num {
+    font-size: 12px;
+    color: #7d7d7d;
+}
+
+.mayor_wrap .mayor_candi .mayor_bottom .graph {
+    height: 100px;
+    bottom: -95px;
+}
+
+.mayor_wrap .mayor_candi .mayor_bottom .graph .vert li {
+    height: 100px;
+}
+
+.mayor_wrap .mayor_candi .mayor_bottom .graph .vert li .bar {
+    position: relative;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: 100%;
+}
+
+.mayor_wrap .bel_cd1 .mayor_bottom .graph {
+    right: 4px;
+}
+
+.mayor_wrap .bel_cd2 .mayor_bottom .graph {
+    left: 4px;
+}
+
+.mayor_wrap .mayor_area {
+    min-width: 320px;
+    padding: 0 20px;
+    height: 160px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.mayor_wrap .mayor_area li {
+    height: 40px;
+    line-height: 20px;
+    padding: 10px 0;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.mayor_wrap .mayor_area li span {
+    float: left;
+    width: 33.333%;
+    text-align: center;
+}
+
+.mayor_area li:first-child {
+    background: none;
+    border-top: 1px solid #d2d2d2;
+}
+
+.mayor_area li .lank {
+    font-family: 'notokr-bold';
+}
+
+.mayor_area li .lank,
+.mayor_area li .hubo_name {
+    width: 21.642857%;
+}
+
+.mayor_area li .party_txt {
+    font-size: 12px;
+    color: #7d7d7d;
+    text-align: center;
+    width: 43.028571%;
+}
+
+.mayor_area li .hubo_percent {
+    font-size: 14px;
+    font-family: 'notokr-bold';
+    text-align: right;
+}
+
+.mayor_date {
+    float: right;
+    font-size: 12px;
+    padding-top: 20px;
+    padding-right: 20px;
+    text-align: right;
+}
+
+.mayor_date_none {
+    padding-bottom: 20px;
+}
+
+.mayor_wrap .openvote_btn {
+    width: 56px;
+    height: 24px;
+    line-height: 1.5em;
+    font-size: 14px;
+    display: inline-block;
+    background: url(https://image.imnews.imbc.com/issue/2022vote/m/images/openvote_btn.png) 44px 10px no-repeat;
+    background-size: 12px;
+    padding-right: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -28px;
+}
+
+.research_section {
+    background: #fff;
+}
+
+/* 개표현황-전국 개표현황 */
+.mayor_wrap .mayor_info .mayor_allvote {
+    height: 60px;
+    line-height: 1.5em;
+    position: relative;
+    padding-top: 10px;
+}
+
+.mayor_do {
+    display: block;
+    font-size: 12px;
+    font-family: 'notokr-regular';
+}
+
+.mayor_pop {
+    font-size: 11px;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    padding-left: 15px;
+    background: url(https://image.imnews.imbc.com/issue/2022vote/m/images/mayor_pop_ico.png) 0px 1px no-repeat;
+    background-size: 11px;
+}
+
+#open_1_top_title button.mayor_pop {
+    font-family: 'notokr-bold';
+}
+
+.mayor_popup {
+    width: 320px;
+    height: 200px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -160px;
+    box-sizing: border-box;
+    border: 1px solid #b4b4b4;
+    border-radius: 15px;
+    background: #fff;
+    z-index: 9999;
+    display: none;
+}
+
+.mayor_popup .mypop_bx {
+    position: relative;
+    padding: 30px 20px 0;
+}
+
+.mayor_popup .mypop_bx p {
+    font-size: 12px;
+}
+
+.mayor_popup .mypop_bx strong {
+    font-family: 'notokr-bold';
+}
+
+.mayor_popup .mypop_bx .c_9a4c1c {
+    color: #9a4c1c;
+}
+
+.mayor_popup .mypop_bx .my_popclose_bx {
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 1px solid #b4b4b4;
+    border-radius: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.mayor_popup .mypop_bx .my_popclose_bx .my_popclose {
+    position: relative;
+    text-indent: -9999px;
+}
+
+.mayor_popup .mypop_bx .my_popclose_bx .my_popclose:before,
+.mayor_popup .mypop_bx .my_popclose_bx .my_popclose:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background-color: #b4b4b4;
+    top: 13px;
+}
+
+.mayor_popup .mypop_bx .my_popclose_bx .my_popclose:before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    left: 4px;
+}
+
+.mayor_popup .mypop_bx .my_popclose_bx .my_popclose:after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    right: -24px;
+}
+
+.mayor_lst_bx {
+    overflow-y: auto;
+    white-space: nowrap;
+    position: relative;
+}
+
+.mayor_lst_bx ul {
+    height: 315px;
+}
+
+.mayor_lst_bx.bgmayor_lst_bx ul {
+    height: 200px;
+}
+
+.mayor_lst_bx ul li span {
+    display: inline-block;
+}
+
+.mayor_lst_bx ul li .mylst_ctt {
+    overflow: hidden;
+    width: calc(100% - 40px);
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    border-top: 1px solid #d2d2d2;
+    padding-top: 10px;
+}
+
+.mayor_lst_bx ul li .mylst_ctt .mylst_rank,
+.mayor_lst_bx ul li .mylst_ctt .mylst_img,
+.mayor_lst_bx ul li .mylst_ctt .mylst_txt {
+    float: left;
+}
+
+.mayor_lst_bx ul li .mylst_ctt .mylst_rank {
+    width: 40px;
+    font-family: 'notokr-bold';
+    line-height: 70px;
+}
+
+.mayor_lst_bx ul li .mylst_ctt .mylst_rank .mylst_rn {
+    font-size: 18px;
+    margin-right: 2px;
+}
+
+.mayor_lst_bx ul li .mylst_ctt .mylst_img {
+    width: 50px;
+    position: relative;
+    top: 7px;
+}
+
+/*확실*/
+.mayor_lst_bx ul li:nth-child(1) {
+    border-top: 0;
+}
+
+.mayor_lst_bx ul li .mylst_definite .mylst_img:after {
+    content: '';
+    display: block;
+    width: 36px;
+    height: 40px;
+    background: url(https://image.imnews.imbc.com/issue/2022vote/m/images/open_definite_img.png) 0 0 no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 42px;
+    left: -15px;
+    z-index: 99;
+}
+
+/*유력*/
+.mayor_lst_bx ul li .mylst_reliable .mylst_img:after {
+    content: '';
+    display: block;
+    width: 36px;
+    height: 40px;
+    background: url(https://image.imnews.imbc.com/issue/2022vote/m/images/open_reliable_img.png) 0 0 no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 42px;
+    left: -15px;
+    z-index: 99;
+}
+
+/*당선*/
+.mayor_lst_bx ul li .mylst_elected .mylst_img:after {
+    content: '';
+    display: block;
+    width: 36px;
+    height: 40px;
+    background: url(https://image.imnews.imbc.com/issue/2022vote/m/images/open_elected_img.png) 0 0 no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 42px;
+    left: -15px;
+    z-index: 99;
+}
+
+.mayor_lst_bx ul li .mylst_ctt .mylst_img .wnimg_bx {
+    width: 50px;
+    height: 66px;
+    border: 1px solid #d4d4d4;
+    box-sizing: border-box;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.mayor_lst_bx ul li .mylst_ctt .mylst_img .wnimg_bx img {
+    width: 100%;
+}
+
+.mayor_lst_bx ul li .mylst_ctt .mylst_txt {
+    width: calc(100% - 100px);
+    display: block;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.mayor_lst_bx ul li .mylst_ctt .mylst_txt ul {
+    overflow: hidden;
+}
+
+.mayor_lst_bx ul li .mylst_ctt .mylst_txt ul li {
+    width: 50%;
+    float: left;
+    font-size: 12px;
+    margin-top: 4px;
+    height: 16px;
+    line-height: 16px;
+    color: #787878;
+}
+
+.mayor_lst_bx ul li .mylst_ctt .mylst_txt ul li:nth-child(1) {
+    width: 100%;
+}
+
+.mayor_lst_bx ul li .mylst_ctt .mylst_txt ul li strong {
+    color: #000;
+    font-family: 'notokr-bold';
+}
+
+.mayor_lst_bx ul li .mylst_ctt .mylst_txt ul li strong.mylst_count {
+    position: relative;
+    font-size: 20px;
+    bottom: 12px;
+}
+
+.mayor_lst_bx ul li .mylst_ctt .mylst_txt ul li:nth-child(3),
+.mayor_lst_bx ul li .mylst_ctt .mylst_txt ul li:nth-child(5) {
+    text-align: right;
+}
+
+.mayor_lst_bx ul li .mylst_ctt .mylst_txt ul li.mylst_name {
+    font-size: 16px;
+}
+
+.mayor_lst_bx ul li .mylst_ctt .mylst_null {
+    text-align: center;
+    display: block;
+    padding-top: 20px;
+}
+
+.mayor_lst_bx ul li .mylst_ctt .mylst_txt ul .mep_percent {
+    color: #a27b63;
+    margin-top: 1px;
+}
+
+.mayor_lst_bx .mylst_dffrvt {
+    width: 150px;
+    height: 25px;
+    line-height: 25px;
+    color: #fff;
+    font-size: 11px;
+    background: #2e5057;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    top: 88px;
+    right: 50%;
+    margin-right: -110px;
+}
+
+.mayor_lst_bx .mylst_dffrvt strong {
+    font-family: 'notokr-bold';
+}
+
+/* 3자구도 */
+.mayor_wrap .mayor_trio {
+    width: 90%;
+    margin: 20px auto 0;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.mayor_wrap .mayor_trio .mayor_candi {
+    width: 30%;
+    height: 225px;
+    margin-left: 5%;
+}
+
+.mayor_wrap .mayor_trio .mayor_candi:first-child {
+    margin-left: 0;
+}
+
+.mayor_wrap .mayor_trio .mayor_candi .mayor_top .mayor_img {
+    width: 85px;
+    height: 85px;
+}
+
+.mayor_wrap .mayor_trio .mayor_candi .mayor_top p {
+    font-size: 11px;
+    width: 35px;
+    height: 35px;
+    line-height: 33px;
+    bottom: -10px;
+    background-size: 35px;
+}
+
+.mayor_wrap .mayor_trio .mayor_candi.bel_cd1 .mayor_top p {
+    left: inherit;
+    right: 10px;
+}
+
+.mayor_wrap .mayor_trio .mayor_candi.bel_cd2 .mayor_top p {
+    right: 5px;
+}
+
+.mayor_wrap .mayor_trio .mayor_bottom .graph {
+    bottom: -184px;
+}
+
+.mayor_wrap .mayor_trio .mayor_candi .mayor_bottom {
+    margin-top: 20px;
+}
+
+.mayor_wrap .mayor_trio .bel_cd1 .mayor_bottom .graph {
+    right: 50%;
+    margin-right: -10px;
+}
+
+.mayor_wrap .mayor_trio .bel_cd2 .mayor_bottom .graph {
+    left: 50%;
+    margin-left: -10px;
+}
+
+.mayor_wrap .mayor_trio .graph .vert li .bar .data-rate {
+    position: absolute;
+    top: -20px;
+    width: 30px;
+    left: 50%;
+    margin-left: -15px;
+    font-family: 'notokr-bold';
+    text-align: center;
+}
+
+.mayor_wrap .mayor_quartet {
+    height: auto;
+}
+
+/* 방송3사 예측순위 */
+.forecast .mayor_wrap .mayor_info {
+    background: #a27b63;
+}
+
+.ep_select {
+    width: 180px;
+    font-weight: bold;
+    height: 52px;
+    line-height: 52px;
+    margin: 0 auto;
+    display: block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    color: #fff;
+    background: #a27b63 url(https://image.imnews.imbc.com/issue/2022vote/m/images/icon-dropdown_v2.png) no-repeat;
+    background-size: 14px;
+    padding-left: 25px;
+    background-position: 94% 20px;
+}
+
+.mayor_arrow {
+    display: inline-block;
+    width: 9px;
+    height: 17px;
+    position: absolute;
+    top: 0;
+    padding: 26px 16px;
+}
+
+.myar_prv {
+    content: '이전 지역';
+    background: url(https://image.imnews.imbc.com/issue/2022vote/m/images/mayor_arrow1.png) 8px 16px no-repeat;
+    left: 0;
+    background-size: 11px;
+}
+
+.myar_nxt {
+    content: '다음 지역';
+    background: url(https://image.imnews.imbc.com/issue/2022vote/m/images/mayor_arrow2.png) 8px 16px no-repeat;
+    right: 0;
+    background-size: 11px;
+}
+
+/*국민의힘*/
+.graph .vert li .bar.part_ppp .data-rate {
+    color: #ae4a4a;
+}
+
+/*더불어민주당*/
+.graph .vert li .bar.part_thumin .data-rate {
+    color: #5996cc;
+}
+
+/*정의당*/
+.graph .vert li .bar.part_justice .data-rate {
+    color: #cfa84d;
+}
+
+/*국민의당*/
+.graph .vert li .bar.part_peoples .data-rate {
+    color: #c67148;
+}
+
+/*기본소득당*/
+.graph .vert li .bar.part_bic .data-rate {
+    color: #00B1A0;
+}
+
+/*국가혁명당*/
+.graph .vert li .bar.part_nrparty .data-rate {
+    color: #db2c2b;
+}
+
+/*우리공화당*/
+.graph .vert li .bar.part_orp .data-rate {
+    color: #009946;
+}
+
+/*진보당*/
+.graph .vert li .bar.part_jbp .data-rate {
+    color: #E60020;
+}
+
+/*한류연합당*/
+.graph .vert li .bar.part_kwave .data-rate {
+    color: #573590;
+}
+
+/*혁명21*/
+.graph .vert li .bar.part_r21party .data-rate {
+    color: #034da2;
+}
+
+/*교육감1*/
+.graph .vert li .bar.party_spid .data-rate {
+    color: #4b686c;
+}
+
+/*교육감2*/
+.graph .vert li .bar.party_second.party_spid .data-rate {
+    color: #6d8e93;
+}
+
+/*기타*/
+.graph .vert li .bar.party_etc .data-rate {
+    color: #9f59cc;
+}
+
+/*무소속*/
+.graph .vert li .bar.part_no .data-rate {
+    color: #b4b4b4;
+}
+
+/* 대통령 지지도 */
+.prsdtSpt_wrap {
+    position: relative;
+    width: 90%;
+    height: 360px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #b4b4b4;
+    margin-bottom: 20px;
+}
+
+.prsdtSpt_wrap figure {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.prsdtSpt_wrap .highcharts-exporting-group {
+    display: none;
+}
+
+.prsdtSpt_wrap .highcharts-credits {
+    display: none;
+}
+
+.prsdtSpt_wrap .highcharts-root {
+    position: relative;
+}
+
+.prsdtSpt_wrap .highcharts-root:after {
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+}
+
+.prsdtSpt_wrap .doughnutGraph {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.prsdtSpt_wrap .doughnut {
+    border: 24px solid #000;
+    border-radius: 100px;
+    height: 120px;
+    width: 120px;
+    opacity: 20%;
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    margin-left: -60px;
+}
+
+/* 지역별 투표율 */
+/* 공통 - graph - column */
+.votestate_graph {
+    background: #fff;
+    width: 100%;
+    padding: 0px 20px 20px;
+}
+
+.graph_wrap {
+    position: relative;
+    height: 188px;
+}
+
+.graph_wrap ul.column_bg,
+.graph_wrap ul.column {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.graph_wrap ul.column {
+    height: 83.333%;
+    align-items: flex-end;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding-top: 23px;
+}
+
+.graph_wrap ul.column li {
+    width: 5.55555%;
+    height: 100%;
+    z-index: 10;
+}
+
+.graph_wrap ul.column li .bar_box {
+    position: relative;
+    height: calc(100% - 34px);
+}
+
+.graph_wrap ul.column li span {
+    display: inline-block;
+}
+
+.graph_wrap ul.column li .bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 0;
+    width: 50%;
+    max-width: 15px;
+    background: linear-gradient(90deg, #e1dfe4 65%, #d1ced6 35%);
+    border-radius: 10px 10px 0 0;
+    transition: all 0.5s;
+}
+
+.graph_wrap ul.column li .info {
+    position: relative;
+    height: 100%;
+}
+
+.graph_wrap ul.column li .best {
+    position: absolute;
+    top: -36px;
+    left: 50%;
+    width: 27px;
+    height: 27px;
+    line-height: 27px;
+    margin-left: -14px;
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: 700;
+    text-align: center;
+    z-index: 10;
+}
+
+.graph_wrap ul.column li .best.high {
+    color: #724888;
+}
+
+.graph_wrap ul.column li .best.low {
+    color: #477b89;
+}
+
+.graph_wrap ul.column li .move {
+    text-indent: -9999px;
+    font-size: 12px;
+    position: absolute;
+    width: 26px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    top: -18px;
+    left: 50%;
+    margin-left: -13px;
+}
+
+.graph_wrap ul.column li .move:hover {
+    text-indent: 0px;
+}
+
+.graph_wrap ul.column li .high .move {
+    text-indent: inherit;
+    color: #8957a1;
+}
+
+.graph_wrap ul.column li .low .move {
+    text-indent: inherit;
+    color: #477b89;
+}
+
+.graph_wrap ul.column li .group {
+    height: 25px;
+    margin-top: 10px;
+    padding: 0 1px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.graph_wrap ul.column li .bar.all {
+    background: linear-gradient(90deg, #476589 65%, #334d70 35%);
+}
+
+.graph_wrap ul.column li .bar.high {
+    background: linear-gradient(90deg, #724888 65%, #59336f 35%);
+}
+
+.graph_wrap ul.column li .bar.low {
+    background: linear-gradient(90deg, #6bb8b3 65%, #52a49e 35%);
+}
+
+.graph_wrap ul.column_bg {
+    flex-direction: column-reverse;
+}
+
+.graph_wrap ul.column_bg li {
+    display: flex;
+    position: relative;
+    height: 17.706%;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.graph_wrap ul.column_bg li:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: #ebebeb;
+    vertical-align: middle;
+    opacity: .5;
+}
+
+.graph_wrap ul.column_bg li span {
+    text-indent: -9999px;
+}
+
+.graph_wrap ul.column_bg li:first-child {
+    display: block;
+    height: 25px;
+    margin-top: 8px;
+    text-indent: -9999px;
+}
+
+.graph_wrap ul.column_bg li:first-child:after {
+    display: none;
+}
+
+.graph_wrap ul.column_bg li:nth-child(2):after {
+    height: 2px;
+}
